@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stolk.me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="script" href="script.js">
+</head>
+<body class="light-mode">
+    <nav class="nav">
+        <div class="brand-icon">
+            <img src="assets/icon.png" alt="brand-icon">
+        </div>
+        <ul class="nav_items">
+          <ul class="HOME">
+            <li><a href="#HOME">ACCEUIL</a></li>
+          </ul>
+          <ul class="PORTFOLIO">
+            <li><a href="#TARIFS">TARIFS</a></li>
+          </ul>
+          <ul class="ABOUT">
+            <li><a href="#CONTACT">CONTACT</a></li>
+          </ul>
+          <ul class="ABOUT">
+            <li><a href="#ABOUT">&Agrave; PROPOS</a></li>
+          </ul>
+        </ul>
+      </nav>
+
+      <section id="HOME">
+        <div class="title_box">
+            <div class="title_container">
+                <div class="title">
+                    <h1>STOLK.me</h1>
+                    <h2>La photographie sans que vous ne le sachiez</h2>
+                </div>
+                <div class="subtitle">
+                    <p>Photos naturelles • Prises sans interruption • Discrétion garantie • Résultats surprenants </p>
+                </div>
+            </div>
+        </div>
+        <div class="txt_container">
+            <p>Découvrez le service de photographie discrète qui s'intègre à votre quotidien,
+                sans engagement et sans que vous ne vous en rendiez compte.<br><br>
+                
+                Nous offrons plusieurs gammes de services, du suivi occasionnel à une immersion complète,
+                pour capturer vos moments les plus authentiques et spontanés. 
+                Que vous soyez en pleine routine, ou en déplacement, nous serons là, invisibles, pour immortaliser chaque instant, créant des images naturelles et inattendues. <br><br>
+                
+                Avec stolk.me, chaque moment devient une photo, sans pose, sans artifice, juste vous.</p>
+                <a href="#TARIFS"><button>Découvrir les tarifs</button></a>
+        </div>
+      </section>
+
+      <section id="TARIFS">
+        <div class="section_title">
+            <p>Découvrez nos tarifs</p>
+        </div>
+        <div class="tarifs_container">
+            <div class="tafis_item" id="item1">
+                <h1>Formule eco</h1>
+                <br>
+                <h2>15 photos
+                    Suivi pendant 2 semaines
+                    Clichés non récupérables
+                </h2>
+                <br>
+                <h1>399,99€ TTC</h1>
+                <button>Choisir cette formule</button>
+            </div>
+            <div class="separator"></div>
+            <div class="tafis_item" id="item2">
+                <h1>Formule eco</h1>
+                <br>
+                <h2>15 photos
+                    Suivi pendant 2 semaines
+                    Clichés non récupérables
+                </h2>
+                <br>
+                <h1>399,99€ TTC</h1>
+                <button>Choisir cette formule</button>
+            </div>
+            <div class="separator"></div>
+            <div class="tafis_item" id="item3">
+                <h1>Formule eco</h1>
+                <br>
+                <h2>15 photos
+                    Suivi pendant 2 semaines
+                    Clichés non récupérables
+                </h2>
+                <br>
+                <h1>399,99€ TTC</h1>
+                <button>Choisir cette formule</button>
+            </div>
+        </div>
+      </section>
+
+      <section id="CONTACT">
+        <div class="section_title">
+            <p>Contact</p>
+        <div class="contact_box">
+            <div class="contact_line">
+                <div class="contact_item">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <p>06.02.03.04.05</p>
+                </div>
+                <div class="contact_item">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <p>contact@stolk.me</p>
+                </div>
+            </div>
+            <div class="contact_line">
+                <div class="contact_item">
+                    <ion-icon name="storefront-outline"></ion-icon>
+                    <p>Ne tentez pas de nous retrouver</p>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section id="ABOUT">
+        <div class="section_title">
+            <p>À propos</p>
+        </div>
+        <div class="txt_container">
+            <p>Chez Stolk.me, on fait les choses différemment.<br><br>
+
+                On ne vous demande pas de sourire, de poser, ou même d'être conscient de ce qui se passe.<br><br>
+                
+                Pas de mise en scène, pas de faux-semblants. Juste vous, dans votre élément, photographié à votre insu.<br><br>
+                
+                Notre mission ? Vous suivre. Littéralement.<br>
+                Dans l'ombre, sans que vous le sachiez. Parce que les meilleurs moments ne se fabriquent pas, ils se volent.<br><br>
+                
+                L'idée née lors d'une soirée où je suivais des gens jusqu’à chez eux, observant leur quotidien sans qu'ils en aient conscience.<br>
+                En réalisant à quel point j'étais devenu invisible, je me suis dit qu'il était temps de transformer cette discrétion en quelque chose d'exceptionnel.<br>
+                Pourquoi garder ces instants pour moi alors qu'ils méritent d'être partagés ?</p>
+        </div>
+      </section>
+
+</body>
+<script>
+    const toggleButton = document.getElementById('modeToggle');
+    const body = document.body;
+    const icon = document.getElementById('icon');
+
+    toggleButton.addEventListener('click', function() {
+        // Alterner entre light-mode et dark-mode
+        if (body.classList.contains('light-mode')) {
+        body.classList.remove('light-mode');
+        body.classList.add('dark-mode');
+        icon.setAttribute('name', 'moon-outline');  // Remplacer l'icône du soleil par la lune
+        } else {
+        body.classList.remove('dark-mode');
+        body.classList.add('light-mode');
+        icon.setAttribute('name', 'sunny-outline');  // Remplacer l'icône de la lune par le soleil
+        }
+    });
+  </script>
+  
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</html>

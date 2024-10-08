@@ -1,0 +1,251 @@
+
+
+@font-face {
+    font-family: 'Avenir Black';
+    src: url('fonts/Avenir-Black.woff2') format('woff2'),
+        url('fonts/Avenir-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Medium';
+    src: url('fonts/Avenir-Medium.woff2') format('woff2'),
+        url('fonts/Avenir-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+  
+  * {
+    font-family: 'Avenir Black';
+  }
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+* {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+body {
+    color: black;
+    background-color: white;
+    transition: 0.4s;
+}
+
+body.dark-mode {
+    color: white;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    width: 100vw;
+    height: 6vh;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    transition: 0.4s;
+    z-index: 1;
+}
+
+body.dark-mode nav {
+    filter: invert(100%);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.brand-icon img {
+    margin-left: 1.5em;
+    width: 80px;
+}
+
+.nav_items {
+    display: flex;
+    font-size: 1.67vh;
+    margin-right: 1em;
+    list-style: none;
+}
+
+.nav_items li {
+    font-size: 16px;
+    padding-left: 1em;
+    padding-right: 1em;
+    transition: 0.4s;
+}
+
+.nav_items li:hover {
+    font-size: 20px;
+    
+}
+
+.nav_items a {
+    text-decoration: none;
+    color: black;
+}
+
+button#modeToggle{
+    height: 6vh;
+    width: 6vw;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 100px;
+    border: none;
+    color: white;
+    background-color: none !important;
+}
+
+#modeToggle ion-icon {
+    font-size: 24px;
+    transition: all 0.3s ease;
+  }
+  
+
+#HOME {
+    top: 6vh;
+    position: relative;
+}
+
+.title_box {
+    background-image: url(assets/1.jpg);
+    background-size: cover;
+}
+
+.title_container {
+    width: 100vw;
+    height: 50vh;
+    text-align: center;
+    align-content: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.title h1 {
+    font-size: 82px;
+    line-height: 64px;
+}
+
+.title h2 {
+    font-size: 19px;
+}
+
+.subtitle {
+    padding-top: 10vh;
+}
+
+.subtitle p {
+    font-size: 32px;
+    font-family: 'Avenir Medium';
+}
+
+.txt_container {
+    height: 50vh;
+    margin-left: 1em;
+    margin-right: 1em;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Avenir Medium';
+    text-align: center;
+    font-size: 24px;
+}
+
+.txt_container p {
+    font-family: 'Avenir Medium';
+}
+
+button {
+    font-size: 28px;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 5vh;
+    border: none;
+    color: white;
+    background-color: black;
+}
+
+body.dark-mode button {
+    filter: invert(100%);
+}
+
+#TARIFS {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section_title {
+    margin: 10vh;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Avenir Black';
+    text-decoration-line: underline;
+}
+
+
+.tarifs_container {
+    display: flex;
+    text-align: center;
+}
+
+.tarifs_container h2 {
+    font-family: 'Avenir Medium';
+}
+
+#CONTACT {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact_box {
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_line {
+    display: flex;
+}
+
+.contact_item {
+    padding: 5vh;
+    display: flex;
+}
+
+.separator {
+    border-left:1px solid #000;
+    height:300px;
+}
+
+body.dark-mode .separator {
+    filter: invert(100%);
+}
+
+ion-icon.md.hydrated {
+    width: 5vw;
+    height: 3vh;
+  }
+
+#ABOUT {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#ABOUT .txt_container {
+    font-size: 32px;
+}
