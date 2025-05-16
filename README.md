@@ -1,4 +1,2 @@
 # Stolk.me
-Dépot de Stolk.me
-
-Test de commit
+Dépot du site vitrine Stolk.me
