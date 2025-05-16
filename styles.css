@@ -87,7 +87,7 @@ body.dark-mode nav {
 
 .nav_items a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 button#modeToggle{
